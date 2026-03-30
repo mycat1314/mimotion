@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Checkout codes
-        uses: actions/checkout@v5
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 
         with:
           token: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：README
       - name: Update system and install zsh
@@ -20,7 +20,7 @@ jobs:
           sudo -E apt-get install zsh -y
           
       - name: 初始化Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@0b93645e9fea7318ebd327f75e666f822811802d
         with:
           python-version: "3.10"
           
